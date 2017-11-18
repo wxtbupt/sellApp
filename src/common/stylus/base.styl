@@ -1,0 +1,11 @@
+/*全局的样式，根据不同dpi缩放*/
+@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
+  .border-1px
+    &::break-after
+      -webkit-transform: scaleY(0.7)
+      transform:scaleY(0.7)//1.5*0.7约等于1
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+  .border-1px
+    &::break-after
+      -webkit-transform: scaleY(0.5)
+      transform:scaleY(0.5)//1.5*0.7约等于1
